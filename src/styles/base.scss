@@ -1,0 +1,19 @@
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  -webkit-overflow-scrolling: touch;
+
+  overflow-x: hidden;
+  // always show the vertical scrollbar so that content doesn't jump
+  overflow-y: scroll;
+
+  box-sizing: border-box;
+}
+
+// inherited from <html>
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
