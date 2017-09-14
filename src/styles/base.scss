@@ -1,5 +1,3 @@
-@import 'normalize';
-
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -18,4 +16,17 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+body {
+  font: 16px/1.5 'Open Sans', sans-serif;
+  color: $textColor;
+}
+
+a {
+  color: $linkColor;
+
+  &:hover {
+    color: $linkHoverColor;
+  }
 }
