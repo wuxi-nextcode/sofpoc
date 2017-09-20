@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import wxnclogo from './wxnclogo.svg';
-// import './Header.css';
+import './MainHeader.scss';
 
 export default class MainHeader extends Component {
   render() {
