@@ -1,4 +1,4 @@
-# SOFPOC
+# SoFPoC
 
 SMART on FHIR Proof of Concept
 
