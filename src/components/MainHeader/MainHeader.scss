@@ -1,3 +1,25 @@
+@import '../../styles/config';
+
 .mainheader {
-  margin: 32px 0 16px;
+  lost-utility: clearfix;
+  margin: 16px 0;
+  text-align: center;
+
+  @media ($tablet) {
+    text-align: inherit;
+
+    img {
+      float: left;
+    }
+  }
+
+  .maintitle {
+    font-weight: 600;
+    margin: 0;
+
+    @media ($tablet) {
+      line-height: 40px;
+      margin: 0 0 0 56px;
+    }
+  }
 }

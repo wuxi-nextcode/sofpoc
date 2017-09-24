@@ -1,0 +1,21 @@
+@import '../../styles/config';
+
+.app-container {
+  width: 100%;
+  max-width: 1600px;
+  min-width: 320px;
+  padding: 0 $gridGutterMobile;
+  margin: 0 auto;
+
+  @media ($tablet) {
+    padding: 0 $gridGutterTablet;
+  }
+}
+
+.grid-test {
+  @include grid-row;
+
+  > div {
+    @include grid-col(12);
+  }
+}

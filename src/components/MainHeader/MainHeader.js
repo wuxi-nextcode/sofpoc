@@ -7,6 +7,7 @@ export default class MainHeader extends Component {
     return (
       <header className="mainheader">
         <img src={wxnclogo} alt="WuXi NextCODE logo" />
+        <p className="maintitle">SoFPoC - SMART on FHIR Proof of Concept!</p>
       </header>
     );
   }

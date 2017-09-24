@@ -10,4 +10,11 @@ $darkBlue: #008BBF;
 
 $textColor: #464646;
 $linkColor: $blue;
-$linkHoverColor: $darkBlue
+$linkHoverColor: $darkBlue;
+
+$gridGutterMobile: 16px;
+$gridGutterTablet: 24px;
+
+$mobile: "max-width: 480px";
+$tablet: "min-width: 720px";
+$desktop: "min-width: 1024px";

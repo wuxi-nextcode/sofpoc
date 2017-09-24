@@ -1,0 +1,10 @@
+@lost gutter 16px;
+@lost flexbox flex;
+
+@mixin grid-row {
+  lost-flex-container: row;
+}
+
+@mixin grid-col($col-count) {
+  lost-column: 1/$col-count;
+}
