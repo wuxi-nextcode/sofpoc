@@ -15,13 +15,14 @@ See `package.json`
 
 ## FHIR js client lib
 
-Observe that we're including 2 3rd party libs, in src/vendor we've added the FHIR client Cerner additions plugin, as recommended by Cerner. Also, in public/vendor we're including the [SMART on FHIR client lib](https://github.com/smart-on-fhir/client-js) with jQuery included (which I think they only use for network). We should at some point maybe try to use the FHIR.js library directly, we just used this for quick prototyping. However, it has been minified, by running `uglifyjs fhir-client-v0.1.11.js --compress -o fhir-client-v0.1.11.min.js` on the command line. We then include that version in our pages. That was a 50% size reduction.
+Observe that we're including 2 3rd party libs, in src/vendor we've added the FHIR client Cerner additions plugin, as recommended by Cerner. Also, in public/vendor we're including the [SMART on FHIR client lib](https://github.com/smart-on-fhir/client-js) with jQuery included (which is only used for network). We should at some point use the FHIR.js library directly via yarn, we just used this for quick prototyping. However, it has been minified, by running `uglifyjs fhir-client-v0.1.11.js --compress -o fhir-client-v0.1.11.min.js` on the command line. We then include that version in our pages. That was a 50% size reduction.
 
 ## Resources:
 
 * Cerner getting started tutorial: http://engineering.cerner.com/smart-on-fhir-tutorial/
 * Cerner dev portal: https://code.cerner.com/developer/smart-on-fhir/apps
 * Demo app: https://github.com/smart-on-fhir/patient-browser
-* http://fhir.cerner.com/smart/
+* Docs on the JS lib we're using (SMART on FHIR client JS): http://docs.smarthealthit.org/clients/javascript/
+* Cerner SMART docs: http://fhir.cerner.com/smart/
 * https://www.hl7.org/fhir/overview-dev.html
 * http://docs.smarthealthit.org/
