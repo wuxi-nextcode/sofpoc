@@ -17,7 +17,11 @@ See `package.json`
 
 Observe that we're including 2 3rd party libs, in src/vendor we've added the FHIR client Cerner additions plugin, as recommended by Cerner. Also, in public/vendor we're including the [SMART on FHIR client lib](https://github.com/smart-on-fhir/client-js) with jQuery included (which is only used for network). We should at some point use the FHIR.js library directly via yarn, we just used this for quick prototyping. However, it has been minified, by running `uglifyjs fhir-client-v0.1.11.js --compress -o fhir-client-v0.1.11.min.js` on the command line. We then include that version in our pages. That was a 50% size reduction.
 
-## Resources:
+## TODO
+
+- [ ] Fix an error when access token expires, seems like either FHIR.js or the SMART client js returns an error, can't find $ (jquery, which is supposed to be bundled with the lib) when trying to use refresh token to refresh access token.
+
+## Resources
 
 * Cerner getting started tutorial: http://engineering.cerner.com/smart-on-fhir-tutorial/
 * Cerner dev portal: https://code.cerner.com/developer/smart-on-fhir/apps
@@ -26,7 +30,3 @@ Observe that we're including 2 3rd party libs, in src/vendor we've added the FHI
 * Cerner SMART docs: http://fhir.cerner.com/smart/
 * https://www.hl7.org/fhir/overview-dev.html
 * http://docs.smarthealthit.org/
-
-## TODO:
-
-- [ ] Fix an error when access token expires, seems like either FHIR.js or the SMART client js returns an error, can't find $ (jquery, which is supposed to be bundled with the lib) when trying to use refresh token to refresh access token.
