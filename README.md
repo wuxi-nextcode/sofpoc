@@ -26,3 +26,7 @@ Observe that we're including 2 3rd party libs, in src/vendor we've added the FHI
 * Cerner SMART docs: http://fhir.cerner.com/smart/
 * https://www.hl7.org/fhir/overview-dev.html
 * http://docs.smarthealthit.org/
+
+## TODO:
+
+- [ ] Fix an error when access token expires, seems like either FHIR.js or the SMART client js returns an error, can't find $ (jquery, which is supposed to be bundled with the lib) when trying to use refresh token to refresh access token.
