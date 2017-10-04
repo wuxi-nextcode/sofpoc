@@ -42,3 +42,4 @@ Observe that we're including two 3rd party libs, in src/vendor we've added the F
 * Cerner SMART docs: http://fhir.cerner.com/smart/
 * FHIR docs: https://www.hl7.org/fhir/overview-dev.html
 * SMART docs: http://docs.smarthealthit.org/
+* create-react-app (on which this project is based) docs: https://github.com/facebookincubator/create-react-app
