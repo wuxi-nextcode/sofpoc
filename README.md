@@ -11,7 +11,7 @@ See `package.json`.
 * `yarn start` to start dev server
 * `yarn build` to build a prod build
 * `yarn test` to run tests
-* `yarn run deploy` to deploy to https://hrparty.github.io/sofpoc
+* `yarn run deploy` to deploy to https://nextcode-health.github.io/sofpoc
 
 ## Current status
 
