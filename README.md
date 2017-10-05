@@ -28,6 +28,11 @@ We can log in through Cerner ([by launching the app from their code console](htt
 
 - [ ] Fix an error when access token expires, seems like either FHIR.js or the SMART client js returns an error, can't find `$` (jquery, which is supposed to be bundled with the lib) when trying to use refresh token to refresh access token.
 - [ ] Introduce a store, either [MobX](https://mobx.js.org/) or [Redux](http://redux.js.org/), prefer MobX.
+- [ ] Find a convenient way to work with different client ids in the app. Should be possible through the built in ENV variable support in create-react-app.
+
+## Working locally
+
+You should be able to work locally on the app by just creating an app in the [Cerner dev portal](https://code.cerner.com/developer/smart-on-fhir/apps) that points to localhost:3000 (the default when you run `yarn start`). You'll need to change the `clientId` in `launch.html` to match the id of the newly created app. This is a bit cumbersome currently, to always have to switch out client ids. See to do above about making the use of multiple client ids easier.
 
 ## FHIR.js client lib
 
